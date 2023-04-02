@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.gamecontainer{
+    font-size: 64px;
+}
+.dino{
+    background-image: url(dino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 826px;
+    height: 1077px;
+    position: absolute;
+    bottom: 0;
+    left: 152px;
+}
+.obstacle{
+    background-image:url(angry.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2015px;
+    height: 1747px;
+    position: absolute;
+    bottom: 17px;
+    left: 44vw;
+}
+.cave{
+    background-image:url(cave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4042px;
+    height: 4000px;
+    position: absolute;
+    bottom: -1362px;
+    left: 63vw;
+
+}
+.animateDino{
+    animation:dino 0.6s linear;
+}
+.obstacleAni{
+    animation: obstacleAni 2s linear infinite;
+}
+.gameOver{
+    position: relative;
+    top: 75px;
+    font-size: 240px;
+    text-align: center;
+    font-family: sans-serif;
+}
+#Scorecont{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: sans-serif;
+    width: 512px;
+    background-color: aqua;
+    text-align: center;
+
+}
+@keyframes dino{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom:2122px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left:100vw;
+    }
+    100%{
+        left:-20vw;
+    }
+}
+
+
+    
